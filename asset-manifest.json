@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tony2811/mydashboard.git/static/css/main.7411a10b.css",
-    "main.js": "/tony2811/mydashboard.git/static/js/main.0b819754.js",
-    "static/js/453.ec400aa2.chunk.js": "/tony2811/mydashboard.git/static/js/453.ec400aa2.chunk.js",
-    "index.html": "/tony2811/mydashboard.git/index.html",
-    "main.7411a10b.css.map": "/tony2811/mydashboard.git/static/css/main.7411a10b.css.map",
-    "main.0b819754.js.map": "/tony2811/mydashboard.git/static/js/main.0b819754.js.map",
-    "453.ec400aa2.chunk.js.map": "/tony2811/mydashboard.git/static/js/453.ec400aa2.chunk.js.map"
+    "main.css": "/mydashboard/static/css/main.7411a10b.css",
+    "main.js": "/mydashboard/static/js/main.ec4feed3.js",
+    "static/js/453.ec400aa2.chunk.js": "/mydashboard/static/js/453.ec400aa2.chunk.js",
+    "index.html": "/mydashboard/index.html",
+    "main.7411a10b.css.map": "/mydashboard/static/css/main.7411a10b.css.map",
+    "main.ec4feed3.js.map": "/mydashboard/static/js/main.ec4feed3.js.map",
+    "453.ec400aa2.chunk.js.map": "/mydashboard/static/js/453.ec400aa2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7411a10b.css",
-    "static/js/main.0b819754.js"
+    "static/js/main.ec4feed3.js"
   ]
 }
