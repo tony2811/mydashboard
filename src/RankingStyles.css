@@ -1,0 +1,90 @@
+/* Ranking list container */
+.ranking-list-container {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    width: 425px;
+    height: calc(13 * 40px); /* Full height minus header *//* Ranking list container */
+    background-color: #ffffff; /* Clean white background */
+    padding: 20px; /* Added more padding for space */
+    overflow-y: auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    z-index: 10; /* Ensure it stays above main content */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title for the ranking list */
+  .ranking-title {
+    font-size: 22px; /* Larger size for title */
+    font-weight: bold;
+    color: #1e90ff; /* Bluish color */
+    margin-bottom: 20px; /* Spacing between title and the list */
+    text-align: left; /* Left align the title */
+    border-bottom: 2px solid #1e90ff; /* Underline the title with bluish color */
+    padding-left: 10px; /* Some padding from the left */
+    text-transform: uppercase; /* All caps for a bold heading */
+  }
+  
+  /* Individual ranking items */
+  .ranking-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10px;
+    font-size: 16px; /* Larger font for better readability */
+    border-bottom: 1px solid #f0f0f0; /* Light border */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
+  }
+  
+  /* Hover effect for ranking items */
+  .ranking-list-item:hover {
+    background-color: #f9f9f9; /* Light grey background */
+    transform: translateX(5px); /* Slight move to the right on hover */
+  }
+  
+  /* Position (rank number) styling */
+  .ranking-position {
+    font-weight: bold;
+    color: #1e90ff; /* Bluish color for position */
+    margin-right: 20px; /* Space between rank and name */
+    width: 30px; /* Fixed width for position */
+    text-align: right; /* Right-align rank */
+  }
+  
+  /* Name (full name) styling */
+  .ranking-name {
+    flex-grow: 1; /* Allow name to take available space */
+    color: #333333; /* Dark color for readability */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis if name is too long */
+    white-space: nowrap;
+    font-weight: normal;
+    padding-left: 10px; /* Padding to separate name from rank */
+    text-align: left; /* Align names to the left */
+    width: 150px; /* Fixed width for name */
+  }
+  
+  /* Score (value) styling */
+  .ranking-score {
+    color: #1e90ff; /* Blue for value */
+    text-align: right;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 18px; /* Larger value font */
+    width: 80px; /* Fixed width for score */
+  }
+  
+  /* Styling for alternating rows */
+  .ranking-list-item:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey background for even rows */
+  }
+  
+  /* Empty or loading state */
+  .ranking-item.empty {
+    color: #999999;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+  }

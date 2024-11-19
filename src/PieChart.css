@@ -1,0 +1,45 @@
+.chart-container1 {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  margin-left: 35px;
+}
+
+.canvas-wrapper-pie {
+  width: 100%; /* Ensure the canvas takes up the full container width */
+  height: 400px; /* Adjust height to make space for the pie chart */
+}
+
+.canvas-wrapper-pie canvas {
+  max-width: 100%; /* Ensure the canvas is responsive */
+  height: 100%; /* Set the height to fit the container */
+}
+
+.custom-legend {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin-right: 10px;
+  display: inline-block;
+}

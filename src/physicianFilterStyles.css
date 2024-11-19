@@ -1,0 +1,142 @@
+/* Physician filter list container */
+.physician-list-container {
+  position: relative;
+  left: 10px;
+  margin-bottom: 20px;/* Full width to match the available space */
+  background-color: #ffffff; /* Clean white background */
+  padding: 20px; /* Added padding for spacing */
+  overflow-y: auto;
+  height: 530px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: 'Arial', sans-serif;
+  width: 425px;
+  margin-left: 25px;
+}
+
+/* Title for the physician filter */
+.filter-container {
+  margin-left: 35px;
+  gap: 10px; /* Minimal space between dropdowns */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dropdown-container {
+  position: relative;
+  width: 250px; /* Set the width for the dropdown */
+}
+
+.dropdown-header {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  
+}
+
+.checkbox-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px; /* Limit the height of the dropdown */
+  overflow-y: auto; /* Make it scrollable */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 10;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.checkbox-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between checkbox and label */
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-container label {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Physician table styles */
+.physician-table {
+  width: 375px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.physician-table th,
+.physician-table td {
+  padding: 12px 10px;
+  text-align: left;
+  font-size: 16px; /* Larger font for readability */
+  border-bottom: 1px solid #f0f0f0; /* Light border */
+}
+
+.physician-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  text-align: left;
+}
+
+.physician-table td {
+  color: #1e90ff; /* Blue color for values */
+  font-weight: bold;
+  text-align: right;
+}
+
+.physician-table tr:hover {
+  background-color: #f9f9f9;
+  transform: translateX(5px); /* Slight move to the right on hover */
+}
+
+.physician-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light grey background for even rows */
+}
+
+.physician-table td:first-child {
+  font-weight: bold; /* Bold the first column (parameter names) */
+  color: #333; /* Dark color for readability */
+}
+
+/* Hover effect for filter items */
+.physician-list-item:hover {
+  background-color: #f9f9f9; /* Light grey background */
+  transform: translateX(5px); /* Slight move to the right on hover */
+}
+
+/* Styling for column names */
+.column-name {
+  font-weight: bold;
+  color: #333333; /* Dark color for readability */
+  text-align: left;
+  min-width: 150px; /* Minimum width for column names */
+  padding-left: 10px; /* Padding from left side */
+}
+
+/* Styling for the column values */
+.column-value {
+  color: #1e90ff; /* Blue color for values */
+  font-weight: bold;
+  text-align: right;
+  min-width: 120px; /* Minimum width for the values */
+  padding-left: 10px;
+  flex-grow: 1; /* Allow values to expand to take available space */
+}

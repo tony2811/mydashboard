@@ -1,0 +1,36 @@
+.chart-container-line {
+    width: 1300px;
+    height: 500px;
+    overflow-x: auto; /* Enable horizontal scrolling for wide charts */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for the chart */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    overflow-y: hidden;
+  }
+  
+  #lineChartCanvas {
+    width: 100%; /* Make the chart responsive */
+    height: 100%;
+  }
+  
+  .physician-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fc; /* Light gray background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    color: #333; /* Darker text color for better contrast */
+  }
+  
+  .physician-info strong {
+    color: #007bff; /* Theme's primary color for highlights */
+  }
+  

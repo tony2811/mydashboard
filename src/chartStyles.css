@@ -1,0 +1,102 @@
+/* chartStyles.css */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f9;  /* Light background for better contrast */
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls label {
+  font-size: 16px;
+  color: #333;
+}
+
+.select-input {
+  padding: 8px 12px;
+  margin-top: 5px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  overflow-x: hidden;
+  margin-top: 0px;
+  gap: 25px;
+  width: 100%;
+  margin-right: 0px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 835px;
+  height: 520px;
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  position: relative;
+  background-color: #ffffff; /* White background for the chart */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+  margin-left: 15px;
+}
+
+.chart-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #007bff;  /* Blue color theme */
+  margin-bottom: 20px;
+}
+
+.chart-canvas {
+  width: 700%;  /* Set a larger width than the container to enable scrolling */
+  min-width: 1200px;  /* Set a minimum width to ensure visibility */
+  height: 90%;
+}
+
+.parameter-container {
+  display: flex;
+  gap: 80px; /* Minimal space between dropdowns */
+  align-items: center;
+  margin-bottom: 0px;
+  margin-left: 365px;
+}
+
+.parameter-container select {
+  width: 200px; /* Fixed width for all dropdowns */
+  padding: 5px; /* Optional: Add padding for better appearance */
+  border: 1px solid #ccc; /* Optional: Add border for styling */
+  border-radius: 4px; /* Optional: Rounded corners */
+  gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-container {
+    max-width: 100%;
+  }
+
+  .select-input {
+    width: 100%;
+  }
+}
+
+
